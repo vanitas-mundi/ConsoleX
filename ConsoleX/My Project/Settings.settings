@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="PressAnyKeyMessage_a_Default" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Press any key to continue</Value>
+    </Setting>
+    <Setting Name="PressAnyKeyMessage_de_DE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Taste, um fortzufahren</Value>
+    </Setting>
+    <Setting Name="PressAnyKeyMessage_en_US" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Press any key to continue</Value>
+    </Setting>
+    <Setting Name="WrongNumberParametersMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Wrong number of parameters</Value>
+    </Setting>
+    <Setting Name="HelpOptionDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Zeigt diese Hilfe.</Value>
+    </Setting>
+    <Setting Name="HelpPageHintsHeader" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hinweise:</Value>
+    </Setting>
+    <Setting Name="HelpPageSamplesHeader" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Beispiele:</Value>
+    </Setting>
+    <Setting Name="HelpPageApplicationDescriptionHeader" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Beschreibung:</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

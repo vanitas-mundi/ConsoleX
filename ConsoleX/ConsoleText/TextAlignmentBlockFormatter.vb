@@ -1,0 +1,70 @@
+﻿Option Explicit On
+Option Infer On
+Option Strict On
+
+#Region " --------------->> Imports/ usings "
+Imports SSP.ConsoleX.Core
+Imports SSP.ConsoleX.ConsoleText.Interfaces
+#End Region
+
+Namespace ConsoleText
+
+  Public Class TextAlignmentBlockFormatter
+
+    Implements ITextAlignmentFormatter
+
+#Region " --------------->> Enumerationen der Klasse "
+#End Region '{Enumerationen der Klasse}
+
+#Region " --------------->> Eigenschaften der Klasse "
+#End Region '{Eigenschaften der Klasse}
+
+#Region " --------------->> Konstruktor und Destruktor der Klasse "
+#End Region '{Konstruktor und Destruktor der Klasse}
+
+#Region " --------------->> Zugriffsmethoden der Klasse "
+#End Region '{Zugriffsmethoden der Klasse}
+
+#Region " --------------->> Ereignismethoden Methoden der Klasse "
+#End Region '{Ereignismethoden der Klasse}
+
+#Region " --------------->> Private Methoden der Klasse "
+#End Region '{Private Methoden der Klasse}
+
+#Region " --------------->> Öffentliche Methoden der Klasse "
+    Public Function FormatText(s As String, ByVal maxWidth As Int32) As String Implements ITextAlignmentFormatter.FormatText
+
+      Dim maxLen = If(maxWidth = 0, Console.WindowWidth, maxWidth)
+
+      If String.IsNullOrEmpty(s) Then Return s.PadRight(maxWidth)
+
+      Dim whiteSpace = " "
+      Dim words = ConsoleTextFunctions.Instance.DivideStringIntoWords(s)
+      Dim blockWhiteSpace = maxLen - s.Length
+
+      Dim positionLeft = 0                              ' Erstes Element von words
+      Dim positionRight = Math.Max(0, words.Count - 2)  ' Vorletztes Element von words
+      Dim positionMiddle = words.Count \ 2              ' Mittleres Element von words
+      Dim isInsertLeft = True
+
+      ' Zeile abwechselnd vorne und hinten mit Leerzeichen auffüllen, bis mittleres Element erreicht wird.
+      For i = 1 To blockWhiteSpace
+        If isInsertLeft Then
+          words(positionLeft) &= whiteSpace
+          positionLeft += 1
+          If positionLeft > positionMiddle Then positionLeft = 0
+        Else
+          words(positionRight) &= whiteSpace
+          positionRight -= 1
+          If positionRight <= positionMiddle Then Math.Max(0, words.Count - 2)
+        End If
+        isInsertLeft = Not isInsertLeft
+      Next i
+
+      Return String.Join(whiteSpace, words)
+    End Function
+#End Region '{Öffentliche Methoden der Klasse}
+
+  End Class
+
+End Namespace

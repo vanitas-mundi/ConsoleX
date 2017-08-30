@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA9EF5A2-317E-497D-94FF-8A139DECA8CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>SSP.ConsoleX</RootNamespace>
+    <AssemblyName>ConsoleX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>strong_name_key.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>false</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ConsoleExt.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ConsoleExt.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConsoleListening">
+      <HintPath>Libraries\ConsoleListening.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandLineParameters\CommandLineSettingsBase.vb" />
+    <Compile Include="CommandLineParameters\ConsoleHelpPage.vb" />
+    <Compile Include="CommandLineParameters\ConsoleHelpPageInfo.vb" />
+    <Compile Include="CommandLineParameters\ConsoleHelpPageParameterDescription.vb" />
+    <Compile Include="CommandLineParameters\ConsoleHelpPageParameterDescriptionCollection.vb" />
+    <Compile Include="CommandLineParameters\Enums\CommandLineParameterValueTypes.vb" />
+    <Compile Include="CommandLineParameters\Exceptions\ParameterParsingErrorException.vb" />
+    <Compile Include="CommandLineParameters\Exceptions\WrongNumberOfArgumentsException.vb" />
+    <Compile Include="CommandLineParameters\Exceptions\ApplicationHasNoHelpPageException.vb" />
+    <Compile Include="CommandLineParameters\Exceptions\ArgumentOrOptionNameNotExistException.vb" />
+    <Compile Include="CommandLineParameters\Exceptions\ArgumentIndexoutOfRangeException.vb" />
+    <Compile Include="CommandLineParameters\Interfaces\ICommandLineSettings.vb" />
+    <Compile Include="CommandLineParameters\ParameterHelper.vb" />
+    <Compile Include="CommandLineParameters\CommandLineParameterInfoCollection.vb" />
+    <Compile Include="CommandLineParameters\OptionDefinitionInfo.vb" />
+    <Compile Include="CommandLineParameters\OptionalArgumentDefinitionInfo.vb" />
+    <Compile Include="CommandLineParameters\ArgumentDefinitionInfo.vb" />
+    <Compile Include="CommandLineParameters\Attributes\RefersToCommandLineParameterAttribute.vb" />
+    <Compile Include="CommandLineParameters\CommandLineParameterInfo.vb" />
+    <Compile Include="CommandLineParameters\CommandLineParametersDefinition.vb" />
+    <Compile Include="CommandLineParameters\Enums\CommandLineParameterTypes.vb" />
+    <Compile Include="ConsoleDrawing\BorderStylesDouble.vb" />
+    <Compile Include="ConsoleDrawing\BorderStylesSingle.vb" />
+    <Compile Include="ConsoleText\ConsoleTextColorSet.vb" />
+    <Compile Include="ConsoleText\ConsoleTextFunctions.vb" />
+    <Compile Include="ConsoleDrawing\BorderStylesNone.vb" />
+    <Compile Include="ConsoleDrawing\DefaultColorSet.vb" />
+    <Compile Include="ConsoleMessaging\ConsoleViewTextMessage.vb" />
+    <Compile Include="Helper\ConsoleArgumentsHelper.vb" />
+    <Compile Include="Helper\ConsoleFunctionsHelper.vb" />
+    <Compile Include="Helper\ConsoleHelper.vb" />
+    <Compile Include="ConsoleControls\BarMenus\BarMenu.vb" />
+    <Compile Include="ConsoleControls\BarMenus\BarMenuHotKeyWrapperItems.vb" />
+    <Compile Include="ConsoleControls\BarMenus\BarMenuInfos.vb" />
+    <Compile Include="ConsoleControls\BarMenus\EventArgs\BarMenuItemChangedEventArgs.vb" />
+    <Compile Include="ConsoleControls\BarMenus\EventArgs\BarMenuDefaultItem.vb" />
+    <Compile Include="ConsoleControls\BarMenus\EventArgs\BarMenuKeyPressedEventArgs.vb" />
+    <Compile Include="ConsoleControls\BarMenus\BarMenuHotKeyWrapperItem.vb" />
+    <Compile Include="ConsoleControls\Enums\DialogResults.vb" />
+    <Compile Include="ConsoleControls\Enums\MessageBoxTypes.vb" />
+    <Compile Include="ConsoleControls\Enums\MessageBoxResults.vb" />
+    <Compile Include="ConsoleControls\Enums\OptionBoxResults.vb" />
+    <Compile Include="Core\ConsoleMessage.vb" />
+    <Compile Include="Core\ConsoleMessageInfo.vb" />
+    <Compile Include="Core\Enums\ConsoleMessageTypes.vb" />
+    <Compile Include="Core\Enums\ConsoleMessageOutputTypes.vb" />
+    <Compile Include="Core\EventArgs\MessageArrivedEventArgs.vb" />
+    <Compile Include="ConsoleDrawing\BorderSettings.vb" />
+    <Compile Include="ConsoleDrawing\BorderStyles.vb" />
+    <Compile Include="ConsoleControls\BarMenus\CheckBarMenu.vb" />
+    <Compile Include="Core\ArgumentsParser.vb" />
+    <Compile Include="ConsoleControls\ColorPicker.vb" />
+    <Compile Include="ConsoleDrawing\ColorSet.vb" />
+    <Compile Include="ConsoleControls\ConsoleInputBox.vb" />
+    <Compile Include="ConsoleControls\ConsoleMessageBox.vb" />
+    <Compile Include="ConsoleControls\ConsoleOptionBox.vb" />
+    <Compile Include="ConsoleDrawing\DialogBounds.vb" />
+    <Compile Include="ConsoleControls\BarMenus\FilePicker.vb" />
+    <Compile Include="ConsoleDrawing\HeaderBorderSettings.vb" />
+    <Compile Include="ConsoleDrawing\Tables.vb" />
+    <Compile Include="ConsoleDrawing\TableSettings.vb" />
+    <Compile Include="Core\Tools.vb" />
+    <Compile Include="ConsoleDrawing\Enums\BorderStyleTypes.vb" />
+    <Compile Include="ConsoleText\Enums\ConsoleTextAlignments.vb" />
+    <Compile Include="Helper\ConsoleInputHelper.vb" />
+    <Compile Include="Helper\ConsoleMessagingHelper.vb" />
+    <Compile Include="Helper\ConsoleTextHelper.vb" />
+    <Compile Include="ConsoleText\Interfaces\ITextAlignmentFormatter.vb" />
+    <Compile Include="ConsoleText\TextAlignmentCenterFormatter.vb" />
+    <Compile Include="ConsoleText\TextAlignmentBlockFormatter.vb" />
+    <Compile Include="ConsoleText\TextAlignmentFormatter.vb" />
+    <Compile Include="ConsoleText\TextAlignmentRightFormatter.vb" />
+    <Compile Include="ConsoleText\TextAlignmentLeftFormatter.vb" />
+    <Compile Include="ConsoleText\ConsoleTextInfo.vb" />
+    <Compile Include="Helper\EventArgs\ConsoleKeyEventArgs.vb" />
+    <Compile Include="Helper\EventArgs\ConsoleMouseEventArgs.vb" />
+    <Compile Include="Helper\EventArgs\LoopUntilCustomerKeyPressedEventArgs.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ConsoleControls\BarMenus\PathPicker.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="strong_name_key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Base\Base.vbproj">
+      <Project>{752e8911-60e4-4cea-bf25-99411a134103}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
